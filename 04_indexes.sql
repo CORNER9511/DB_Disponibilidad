@@ -1,0 +1,153 @@
+-------------------------------------------------------
+-- INDICES (PK/UK) - DB_DISPONIBILIDAD
+-------------------------------------------------------
+
+--  DDL for Index PK_TBL_CELULA
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_CELULA" ON "DB_DISPONIBILIDAD"."TBL_CELULA" ("ID_CELULA") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_TIPO_INDISPONIBILIDAD
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_TIPO_INDISPONIBILIDAD" ON "DB_DISPONIBILIDAD"."TBL_TIPO_INDISPONIBILIDAD" ("ID_TIPO_INDISPONIBILIDAD") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index IDX_LOGERROR_FECHA
+--------------------------------------------------------
+
+  CREATE INDEX "DB_DISPONIBILIDAD"."IDX_LOGERROR_FECHA" ON "DB_DISPONIBILIDAD"."TBL_LOG_ERRORES" (TRUNC("FECHA")) 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_APLICACION
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_APLICACION" ON "DB_DISPONIBILIDAD"."TBL_APLICACION" ("ID_APLICACION") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_INDISPONIBILIDAD
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_INDISPONIBILIDAD" ON "DB_DISPONIBILIDAD"."TBL_INDISPONIBILIDAD" ("ID_INDISPONIBILIDAD") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_CATEGORIA
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_CATEGORIA" ON "DB_DISPONIBILIDAD"."TBL_CATEGORIA" ("ID_CATEGORIA") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_TECNOLOGIA_APLICACION
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_TECNOLOGIA_APLICACION" ON "DB_DISPONIBILIDAD"."TBL_TECNOLOGIA_APLICACION" ("ID_TECNOLOGIA") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_EMPLEADO
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_EMPLEADO" ON "DB_DISPONIBILIDAD"."TBL_EMPLEADO" ("IDENTIFICACION") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_EQUIPO_RESOLUTOR
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_EQUIPO_RESOLUTOR" ON "DB_DISPONIBILIDAD"."TBL_EQUIPO_RESOLUTOR" ("ID_EQ_RESOLUTOR") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_DOMINIOS
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_DOMINIOS" ON "DB_DISPONIBILIDAD"."TBL_DOMINIOS" ("ID_DOMINIOS") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_PROVEEDOR
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_PROVEEDOR" ON "DB_DISPONIBILIDAD"."TBL_PROVEEDOR" ("ID_PROVEEDOR") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_CANAL_VENTA_DIGITAL
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_CANAL_VENTA_DIGITAL" ON "DB_DISPONIBILIDAD"."TBL_CANAL_VENTA_DIGITAL" ("ID_CANALVD") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_TIPO_PROBLEMA
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_TIPO_PROBLEMA" ON "DB_DISPONIBILIDAD"."TBL_TIPO_PROBLEMA" ("ID_TIPO_PROBLEMA") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_TIPO_TIENDA
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_TIPO_TIENDA" ON "DB_DISPONIBILIDAD"."TBL_TIPO_TIENDA" ("ID_TIPO_TIENDA") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_UBICACIONES
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_UBICACIONES" ON "DB_DISPONIBILIDAD"."TBL_UBICACIONES" ("ID_UBICACION") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_LOGERROR_ID
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_LOGERROR_ID" ON "DB_DISPONIBILIDAD"."TBL_LOG_ERRORES" ("ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_CALENDARIO
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_CALENDARIO" ON "DB_DISPONIBILIDAD"."TBL_CALENDARIO" ("FECHA") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_MACROPROCESO
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_MACROPROCESO" ON "DB_DISPONIBILIDAD"."TBL_MACROPROCESO" ("ID_MACROPROCESO") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_PROCESO
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_PROCESO" ON "DB_DISPONIBILIDAD"."TBL_PROCESO" ("ID_PROCESO") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index PK_TBL_SUBPROCESO
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DB_DISPONIBILIDAD"."PK_TBL_SUBPROCESO" ON "DB_DISPONIBILIDAD"."TBL_SUBPROCESO" ("ID_SUBPROCESO") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
